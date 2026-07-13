@@ -1,0 +1,79 @@
+/* CSS file: add styles here */
+
+/* Add valid CSS rules below */
+html {
+    min-height: 100%;
+    background-color: #000000;
+}
+
+body {
+    margin: 20px auto;
+    padding: 20px;
+    width: min(100vw - 40px, 980px);
+    min-height: calc(100vh - 40px);
+    box-sizing: border-box;
+    border: 4px solid #bc0606;
+    background-color: #000000;
+    font-family: 'Metamorphous', 'Creepster', serif;
+    color: #bc0606;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 20px;
+    font-size: clamp(0.95rem, 1.5vw, 1rem);
+}
+
+header,
+.page-image,
+.name-input,
+p {
+    grid-column: 1 / -1;
+}
+
+h1,
+.section-card h2 {
+    font-family: 'UnifrakturCook', 'Old English Text MT', serif;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+.page-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 320px;
+    border: 3px solid #bc0606;
+    background-color: #111111;
+}
+
+.section-card {
+    width: 100%;
+    min-height: 140px;
+    border: 3px solid #bc0606;
+    padding: 15px;
+    background-color: #111111;
+    box-sizing: border-box;
+}
+
+.name-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.name-input input {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    border: 3px solid #bc0606;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+p {
+    margin: 8px 0 0;
+    text-align: center;
+}
