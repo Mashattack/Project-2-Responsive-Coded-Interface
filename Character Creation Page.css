@@ -77,3 +77,22 @@ p {
     margin: 8px 0 0;
     text-align: center;
 }
+
+.option-item,
+.option-list label {
+    cursor: pointer;
+}
+
+.option-item:hover label,
+.option-item label:hover,
+.option-list label:hover,
+.option-item label:focus-within {
+    border-color: #fd5353;
+    color: #fd5353;
+    background: rgba(253, 83, 83, 0.08);
+}
+
+.option-item input[type="radio"]:hover + .option-label,
+.option-item input[type="radio"]:focus-visible + .option-label {
+    color: #fd5353;
+}
